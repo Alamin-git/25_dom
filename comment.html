@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>My Bloges</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui aperiam cupiditate accusantium eos
+            distinctio porro, in at, atque cumque, nesciunt eius? Laudantium neque delectus facilis repellat eum odio
+            placeat.</p>
+    </div><br><br>
+    <div id="comment-container">
+        <p>comments.....</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, architecto?</p>
+        <p>Ut quasi doloremque veniam maxime minus nam voluptates aut exercitationem?</p>
+    </div>
+    <div>
+
+        <textarea name="" id="new-comment" cols="30" rows="4" placeholder="post your comments"></textarea>
+        <br>
+        <button id="submit-comment">post</button>
+    </div>
+
+    <script>
+        // stap 1. add butten event handler
+        document.getElementById('submit-comment').addEventListener('click', function () {
+
+            // stap 2. get user comments
+            const commentBox = document.getElementById('new-comment');
+            // const userComment = commentBox.value;
+
+            // stap 3. create comment paragraph
+            const newComment = document.createElement('p');
+            newComment.innerText = commentBox.value;   //we could also use (userComment) variabla
+
+            // stap 4. append comment to his parent element
+            const commentContainer = document.getElementById('comment-container');
+            commentContainer.appendChild(newComment);
+
+            // step 5. clear comment box 
+            commentBox.value = '';
+        })
+    </script>
+</body>
+
+</html>

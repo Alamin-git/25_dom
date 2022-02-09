@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+
+<body>
+    <h2>Event niye ClickBaji</h2>
+    <button onclick="alert('This is on click event')">Click Me</button>
+    <button onclick="document.body.style.backgroundColor='blue'">Click for blue</button>
+    <button id="red">Click
+        for red</button>
+    <button onclick="yellow()">Click for Yellow</button>
+    <button id="make-green">Click Me: Green</button>
+    <button id="make-green-yellow">Click Me: Green Yellow</button>
+    <button id="make-Hot-Pink">Click Me: Hot Pink</button>
+    <button id="make-light-blue">Click Me: Light blue</button>
+
+
+    <!-- set text by useing Function -->
+    <div>
+        <p id="click-method"></p>
+        <button onclick="handelJustFunctionClick(), makeRed()">show p text</button>
+        <!-- direct function -->
+        <button id="direct-event">Click This</button>
+    </div>
+    <div>
+        <p id="click-method-input"></p>
+        <input id="name-fild" type="text" placeholder="set name">
+        <button id="handler-event">Update name</button>
+    </div>
+
+
+    <script src="event.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

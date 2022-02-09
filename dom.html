@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>Dom niye tanatani</h2>
+    </header>
+    <main>
+        <article>
+            <h2 id="hed">My Bloge-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem ducimus labore
+                dignissimos laudantium harum porro aut quam laborum minima perferendis voluptate ad eaque dolorum,
+                mollitia voluptatum facilis cumque sit?</p>
+        </article>
+        <article class="blog">
+            <h2>My Bloge-2</h2>
+            <p>Consequuntur, minus accusamus! Aliquam labore dolorem odio doloremque architecto animi consequuntur
+                dolore quasi perspiciatis. Earum sequi repellat natus sint possimus, reprehenderit deserunt doloribus
+                numquam consequatur blanditiis voluptatibus a aperiam enim!</p>
+        </article>
+        <article class="blog">
+            <h2>My Bloge-3</h2>
+            <p>Officia error aperiam in doloribus velit maxime corrupti numquam praesentium dolores, pariatur laudantium
+                ratione est debitis provident deleniti odit vitae eum consequuntur molestias eius impedit magnam fugit
+                non placeat? Labore!</p>
+        </article>
+        <article class="blog">
+            <h2>My Bloge-4</h2>
+            <p>Corporis facilis sit magnam dolor eius! Amet nihil nulla est, dolorum iure non? Aperiam dolor aspernatur
+                eligendi delectus, sint nisi adipisci! Praesentium sit molestias tenetur odio aliquid numquam facilis
+                hic?</p>
+        </article>
+        <article class="blog">
+            <h2>My Bloge-5</h2>
+            <p>Nemo mollitia, distinctio fugiat commodi nulla voluptatem neque similique, placeat illo doloremque sed
+                sapiente aspernatur ex labore quos nostrum minima praesentium maiores enim et qui eos dicta! Possimus,
+                laboriosam adipisci?</p>
+        </article>
+    </main>
+
+    <script>
+        const blogetitle = document.getElementsByTagName('h2');
+        for (const h2 of blogetitle) {
+            console.log('h2');
+        }
+        const blogs = document.getElementsByClassName('blog');
+        for (const blog of blogs) {
+            blog.style.border = '2px solid orange';
+            blog.style.borderRadius = '10px'
+        }
+    </script>
+</body>
+
+</html>
